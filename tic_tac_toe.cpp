@@ -93,9 +93,8 @@ int main()
 	    Game game;	
 	    game.player = rand() % 2;
 	    game.update();
-	    bool run = 1;
 
-	    while(run){
+	    while(1){
 	    	game.play();
 	    	game.update();
 	    	if(game.player == 1){game.player = 2;}
