@@ -97,8 +97,7 @@ int main()
 	    while(1){
 	    	game.play();
 	    	game.update();
-	    	if(game.player == 1){game.player = 2;}
-	    	else{game.player = 1;};
+	    	game.player = game.player == 1 ? 2 : 1;
 	    	if(game.test()){break;};
 	    };
 	    string yn;
